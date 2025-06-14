@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #fac1de, #ffd6ec, #e7e7e7);
+  color: #e45dc9;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.contador {
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+  margin-bottom: 30px;
+  background: #fff0f5;
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  text-align: center;
+  border: 2px dashed #ffffff;
+  transition: transform 0.3s;
+}
+
+.contador:hover {
+  transform: scale(1.05);
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 3/2;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  border: 4px solid #ffa5c3;
+}
+
+.slides {
+  display: flex;
+  height: 100%;
+  transition: transform 1s ease;
+}
+
+.slides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex: 0 0 auto;
+}
